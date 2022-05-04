@@ -1,0 +1,15 @@
+{
+  "name": "webpack-module-federation-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install:apps": "concurrently \"cd container-app; npm install\" \"cd remote-app; npm install\"",
+    "start": "concurrently \"cd remote-app; npm start\" \"cd container-app; npm run dev\""
+  },
+  "author": "Owen Ashurst",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.1.0"
+  }
+}
